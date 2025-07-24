@@ -1,0 +1,112 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.userBox {
+  margin-bottom: 5em;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.nameHeading {
+  font-size: 15px;
+
+  span {
+    font-style: italic;
+    font-weight: 550;
+  }
+}
+
+.counter-container {
+  /* display: flex; */
+
+  button {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+
+.color-form-container {
+  display: flex;
+}
+
+.color-box-list-container {
+  margin-top: 16px;
+
+  display: grid;
+  gap: 16px;
+}
+
+.movie-container {
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  height: 640px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie-rating {
+  font-size: 20px;
+}
+
+.movie-summary {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.movie-content-container {
+  padding: 16px;
+}
+
+.movie-list-container {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.add-movie {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  button {
+    height: 50px;
+  }
+}
+
+.toggle-summary {
+  display: flex;
+  flex-direction: column;
+}
