@@ -1,5 +1,6 @@
-import "./styles.css";
+import "../styles.css";
 import { useState } from "react";
+import { ColorBoxList } from "../components/ColorBoxList";
 
 function ColorGame() {
   const [color, setColor] = useState("");
@@ -20,25 +21,6 @@ function ColorGame() {
         <ColorBoxList colors={colors} />
       </div>
     </div>
-  );
-}
-
-function ColorBox({ color }) {
-  const styles = {
-    background: color,
-    height: "25px",
-    width: "250px",
-  };
-  return <div style={styles}></div>;
-}
-
-function ColorBoxList({ colors }) {
-  return (
-    <>
-      {colors.map((color) => (
-        <ColorBox color={color} />
-      ))}
-    </>
   );
 }
 

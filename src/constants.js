@@ -1,6 +1,3 @@
-import "./styles.css";
-import { LikeButtons } from "./DislikeButton";
-
 const users = [
   {
     name: "Ragav",
@@ -19,26 +16,4 @@ const users = [
   },
 ];
 
-function User({ name, imageLink }) {
-  return (
-    <div className="userBox">
-      <img src={imageLink} className="profileImage" />
-      <p className="nameHeading">
-        Hello, <span>{name}🎉🎉</span>
-      </p>
-      <LikeButtons />
-    </div>
-  );
-}
-
-function UserList({ users }) {
-  return (
-    <div>
-      {users.map((user) => (
-        <User name={user.name} imageLink={user.image} />
-      ))}
-    </div>
-  );
-}
-
-export { users, User, UserList };
+export { users };
